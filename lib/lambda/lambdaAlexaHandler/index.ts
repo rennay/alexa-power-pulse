@@ -27,7 +27,7 @@ const NationalStatusIntentHandler = {
   },
   async handle(handlerInput: any) {
     logger.debug('**** NationalStatusIntentHandler.handle ****');
-    let speakOutput = `At the top of this hour, `;
+    let speakOutput = `National load shedding status is: `;
     try {
       const dynamoTableName = process.env.DYNAMODB_PERSISTENCE_TABLE_NAME;
 
