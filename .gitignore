@@ -1,0 +1,28 @@
+# SPDX-License-Identifier: Apache-2.0
+
+*.js
+!jest.config.js
+*.d.ts
+node_modules
+
+# CDK asset staging directory
+.cdk.staging
+cdk.out
+!.eslintrc.js
+
+
+dist
+
+coverage
+
+.vscode
+
+.DS_Store
+
+eventbridge
+
+oss-attribution
+package-lock.json.before
+LICENSE-THIRD-PARTY.before
+reuse-lint-output.txt
+/.idea/

@@ -1,0 +1,37 @@
+{
+  "name": "lmb-power-pulse-alexa-handler",
+  "version": "1.0.0",
+  "description": "Package for TypeScript functions for Power Pulse Alexa Handler",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "buildold": "npm install --quiet && npm audit && npm test -- --passWithNoTests && tsc && cp package.json dist/package.json && cp package-lock.json dist/package-lock.json && cp MHHS*.json dist/ && cd dist && npm install --only=prod",
+    "build": "npm run build:local && npm run build:dist",
+    "build:local": "npm install && npm audit && npm test -- --passWithNoTests && tsc -p .",
+    "build:dist": "mkdir -p dist && cp package.json package-lock.json dist && cd dist && sed -i'' -e 's%file:\\.\\./\\.\\./%file:../../../%g;' package.json && sed -i'' -e 's%\\.\\./\\.\\./%../../../%;' package-lock.json && npm install --install-links --omit=dev && cd -",
+    "clean": "rm -r dist"
+  },
+  "author": "Rennay Dorasamy",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.111",
+    "@types/node": "^18.14.6",
+    "@typescript-eslint/eslint-plugin": "^5.54.0",
+    "esbuild": "^0.17.10",
+    "eslint": "^8.35.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-airbnb-typescript": "^17.0.0",
+    "eslint-config-standard-with-typescript": "^34.0.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-n": "^15.6.1",
+    "eslint-plugin-promise": "^6.1.1",
+    "typescript": "^4.9.5"
+  },
+  "dependencies": {
+    "ask-sdk-core": "^2.14.0",
+    "ask-sdk-dynamodb-persistence-adapter": "^2.9.0",
+    "aws-lambda": "^1.0.7",
+    "aws-sdk": "^2.1360.0",
+    "winston": "^3.8.2"
+  }
+}

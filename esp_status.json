@@ -1,0 +1,74 @@
+{
+  "status": {
+      "capetown": {
+          "name": "Cape Town",
+          "next_stages": [
+              {
+                  "stage": "6",
+                  "stage_start_timestamp": "2023-04-18T20:00:00+02:00"
+              },
+              {
+                  "stage": "4",
+                  "stage_start_timestamp": "2023-04-19T05:00:00+02:00"
+              },
+              {
+                  "stage": "6",
+                  "stage_start_timestamp": "2023-04-19T20:00:00+02:00"
+              },
+              {
+                  "stage": "4",
+                  "stage_start_timestamp": "2023-04-20T05:00:00+02:00"
+              },
+              {
+                  "stage": "6",
+                  "stage_start_timestamp": "2023-04-20T20:00:00+02:00"
+              },
+              {
+                  "stage": "4",
+                  "stage_start_timestamp": "2023-04-21T05:00:00+02:00"
+              },
+              {
+                  "stage": "6",
+                  "stage_start_timestamp": "2023-04-21T20:00:00+02:00"
+              }
+          ],
+          "stage": "4",
+          "stage_updated": "2023-04-18T05:00:00.535784+02:00"
+      },
+      "eskom": {
+          "name": "Eskom",
+          "next_stages": [
+              {
+                  "stage": "6",
+                  "stage_start_timestamp": "2023-04-18T16:00:00+02:00"
+              },
+              {
+                  "stage": "5",
+                  "stage_start_timestamp": "2023-04-19T05:00:00+02:00"
+              },
+              {
+                  "stage": "6",
+                  "stage_start_timestamp": "2023-04-19T16:00:00+02:00"
+              },
+              {
+                  "stage": "5",
+                  "stage_start_timestamp": "2023-04-20T05:00:00+02:00"
+              },
+              {
+                  "stage": "6",
+                  "stage_start_timestamp": "2023-04-20T16:00:00+02:00"
+              },
+              {
+                  "stage": "5",
+                  "stage_start_timestamp": "2023-04-21T05:00:00+02:00"
+              },
+              {
+                  "stage": "6",
+                  "stage_start_timestamp": "2023-04-21T16:00:00+02:00"
+              }
+          ],
+          "stage": "5",
+          "stage_updated": "2023-04-18T05:00:00.535784+02:00"
+      }
+  }
+}

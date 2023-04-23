@@ -1,0 +1,17 @@
+{
+  "name": "node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "author": "",
+  "license": "Apache-2.0",
+  "scripts": {
+    "lambdaAlexaHandler": "cd lambdaAlexaHandler && npm run build",
+    "lambdaESPIntegration": "cd lambdaESPIntegration && npm run build",
+    "non-smart-reads": "cd non-smart-reads && npm run build",
+    "builds": "npm install --quiet && npm run lambdaAlexaHandler"
+  },
+  "dependencies": {
+    "concurrently": "^7.6.0"
+  }
+}

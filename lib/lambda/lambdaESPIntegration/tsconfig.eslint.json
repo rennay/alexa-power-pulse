@@ -1,0 +1,5 @@
+{
+  "extends": "./tsconfig.compilerOptions.json",
+  "include": ["**/*.ts"],
+  "exclude": ["cdk.out", "**/types", "**/dist", "**/node_modules", "**/.*"]
+}
